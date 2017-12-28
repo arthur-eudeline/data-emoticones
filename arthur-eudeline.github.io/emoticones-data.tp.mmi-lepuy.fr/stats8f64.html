@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    
+<!-- Mirrored from emoticones-data.tp.mmi-lepuy.fr/stats.php?emo-id=12 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2017 15:00:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>Statistiques</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="icon" href="favicon.ico"/>
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+        <!--FACEBOOK-->
+        <meta property="og:url"                content="index.html" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Voter pour une émoticône" />
+        <meta property="og:description"        content="En quelques cliques, donnez votre avis et soutenez un projet étudiant !" />
+        <meta property="og:image"              content="cover.jpg" />
+
+        <link href="css/swiper/swiper.css" rel="stylesheet">
+        <link rel="stylesheet" href='css/bootstrap/bootstrap.min.css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fonts.css">
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+
+    <body class="green-template">
+
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="col-xs-8 col-sm-2">
+                    <div class="fb-share-button" data-href="http://emoticones-data.tp.mmi-lepuy.fr" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Femoticones-data.tp.mmi-lepuy.fr%2F&amp;src=sdkpreparse">Partager</a></div>
+                </div>
+
+                <div class="col-xs-4 text-right hide-desktop">
+                    <button type="button" class=" menu-trigg" id="menu-trigg"></button>
+                </div>
+
+                <div class="col-sm-10 menu-wrapper" id="menu-wrapper">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <ul class="row">
+                                <li class="default"><a href="emo-list.html">Accueil</a></li>
+                                <li class="sep no-select"></li>
+                                <li class="default"><a href="index-2.html">Voter<span class="hide-desktop"> pour une émoticône</span></a></li>
+                                <li class="sep no-select"></li>
+                                <li class="default"><a href="projet.html">Le projet</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 text-right">
+                                                        <div class="vote-count color-changed no-select color-change-border more-dark ">
+                                <span class="color-change-text">Déjà <b>649</b> votes !</span>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>  
+
+
+        
+<div class="jumbotron cover color-changed bg-change">
+    <div class="container">
+        <div class="row text-center">
+
+            <h1 class="color-change">Statistiques</h1>
+
+        </div>
+    </div>
+</div>
+
+<div class="container color-changed container-box emo-box space-bet-lg text-center">
+    <div class="row">
+        <div class="emo-wrapper text-center no-select">
+            <img alt="emoji-Bisous" title="emoji-Bisous" src="uploads/emojis/kiss.svg" class="img-responsive emo-img">
+            <h2 class="bg-change color-change">Bisous</h2>
+        </div>
+    </div>
+
+</div>
+
+<!--MAIN GRAPH-->
+<div class="container container-box space-bet-lg resultat-imp-box">
+    <div class="row">
+                  
+        <!--GRAPH-->
+        <div class="col-xs-12 col-sm-6 col-md-8">
+            <h2 class="col-xs-12 text-center">Top 10 des mots les plus associés à l'émoticône</h2>
+            <canvas id="chart" class="no-select"></canvas>
+        </div>
+
+        <!--LEGEND-->
+        <ol class="col-xs-12 col-sm-6 col-md-4 classement">
+                                    <li>
+                <span class="no-select">1</span> <b>Mignon</b> : 9            </li>
+                        <li>
+                <span class="no-select">2</span> <b>Bisous</b> : 7            </li>
+                        <li>
+                <span class="no-select">3</span> <b>Heureux</b> : 5            </li>
+                        <li>
+                <span class="no-select">4</span> <b>Joyeux</b> : 4            </li>
+                        <li>
+                <span class="no-select">5</span> <b>Adorable</b> : 4            </li>
+                        <li>
+                <span class="no-select">6</span> <b>Sympathique</b> : 2            </li>
+                        <li>
+                <span class="no-select">7</span> <b>Taquin</b> : 2            </li>
+                        <li>
+                <span class="no-select">8</span> <b>Content</b> : 2            </li>
+                        <li>
+                <span class="no-select">9</span> <b>Amical</b> : 2            </li>
+                        <li>
+                <span class="no-select">10</span> <b>Choupi</b> : 2            </li>
+                    </ol>
+            </div>
+</div>
+<!--MAIN GRAPH-->
+
+<!--PAR SEXE-->
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <!--FEMMES-->
+            <div class="col-xs-12 col-md-6 space-bet-md">
+                <div class="tile-box">
+                    <h3 class="text-center">Top 5 : femmes</h3>
+                    <canvas id="femmes_chart"></canvas>
+
+                    <!--LEGEND-->
+                    <ol class="classement" style="min-height: 275px !important;">
+                                                                        <li>
+                            <span class="no-select">1</span> <b>Bisous</b> : 5                        </li>
+                                                <li>
+                            <span class="no-select">2</span> <b>Mignon</b> : 5                        </li>
+                                                <li>
+                            <span class="no-select">3</span> <b>Heureux</b> : 4                        </li>
+                                                <li>
+                            <span class="no-select">4</span> <b>Adorable</b> : 3                        </li>
+                                                <li>
+                            <span class="no-select">5</span> <b>Amical</b> : 2                        </li>
+                                            </ol>
+                </div>
+            </div>
+            <!--FEMMES-->
+
+            <!--HOMMES-->
+            <div class="col-xs-12 col-md-6 space-bet-md">
+                <div class="tile-box">
+                    <h3 class="text-center">Top 5 : hommes</h3>
+                    <canvas id="hommes_chart"></canvas>
+
+                    <!--LEGEND-->
+                    <ol class="classement" style="min-height: 275px !important;">
+                                                                        <li>
+                            <span class="no-select">1</span> <b>Mignon</b> : 4                        </li>
+                                                <li>
+                            <span class="no-select">2</span> <b>Joyeux</b> : 3                        </li>
+                                                <li>
+                            <span class="no-select">3</span> <b>Taquin</b> : 2                        </li>
+                                                <li>
+                            <span class="no-select">4</span> <b>Choupi</b> : 2                        </li>
+                                                <li>
+                            <span class="no-select">5</span> <b>Bisous</b> : 1                        </li>
+                                            </ol>
+                </div>
+            </div>
+            <!--HOMMES-->
+        </div>
+    </div>
+</div>
+<!--PAR SEXE-->
+
+<!--PAR ÂGE-->
+<div class="container container-box space-bet-lg">
+    <h2 class="text-center">Top 3 par tranche d'âge</h2>
+
+        
+    <div style="display:none">
+        2Array
+(
+    [0] => Array
+        (
+            [age] => 17 - 21 ans
+            [tab] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [nom] => Mignon
+                            [age] => 17_21
+                            [nb] => 6
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [nom] => Heureux
+                            [age] => 17_21
+                            [nb] => 4
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [nom] => Bisous
+                            [age] => 17_21
+                            [nb] => 3
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [age] => 50 - 59 ans
+            [tab] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [nom] => Bisounours
+                            [age] => 50_59
+                            [nb] => 1
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [nom] => Heureux
+                            [age] => 50_59
+                            [nb] => 1
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [nom] => Bienveillant
+                            [age] => 50_59
+                            [nb] => 1
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [_16] => Array
+        (
+        )
+
+    [17_21] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [nom] => Mignon
+                    [age] => 17_21
+                    [nb] => 6
+                )
+
+            [1] => stdClass Object
+                (
+                    [nom] => Heureux
+                    [age] => 17_21
+                    [nb] => 4
+                )
+
+            [2] => stdClass Object
+                (
+                    [nom] => Bisous
+                    [age] => 17_21
+                    [nb] => 3
+                )
+
+        )
+
+    [22_29] => Array
+        (
+        )
+
+    [30_39] => Array
+        (
+        )
+
+    [40_49] => Array
+        (
+        )
+
+    [50_59] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [nom] => Bisounours
+                    [age] => 50_59
+                    [nb] => 1
+                )
+
+            [1] => stdClass Object
+                (
+                    [nom] => Heureux
+                    [age] => 50_59
+                    [nb] => 1
+                )
+
+            [2] => stdClass Object
+                (
+                    [nom] => Bienveillant
+                    [age] => 50_59
+                    [nb] => 1
+                )
+
+        )
+
+    [60_] => Array
+        (
+        )
+
+)
+    </div>
+
+    <div class="swiper-container space-bet-lg" id="swiper-age">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                <h3 class="text-center"><b>17 - 21 ans</b></h3>
+
+                <div class="space-bet-md text-center resultat-min">
+                                        <div class="resultat-row">
+                        <h4><b>Mignon</b></h4>
+                        <p>Voté 6 fois</p>
+                    </div>
+                                        <div class="resultat-row">
+                        <h4><b>Heureux</b></h4>
+                        <p>Voté 4 fois</p>
+                    </div>
+                                        <div class="resultat-row">
+                        <h4><b>Bisous</b></h4>
+                        <p>Voté 3 fois</p>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="swiper-slide">
+                <h3 class="text-center"><b>50 - 59 ans</b></h3>
+
+                <div class="space-bet-md text-center resultat-min">
+                                        <div class="resultat-row">
+                        <h4><b>Bisounours</b></h4>
+                        <p>Voté 1 fois</p>
+                    </div>
+                                        <div class="resultat-row">
+                        <h4><b>Heureux</b></h4>
+                        <p>Voté 1 fois</p>
+                    </div>
+                                        <div class="resultat-row">
+                        <h4><b>Bienveillant</b></h4>
+                        <p>Voté 1 fois</p>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+
+        <div class="swiper-button-prev" id="btn-prev"></div>
+        <div class="swiper-button-next" id="btn-next"></div>
+    </div>
+
+    <div class="space-bet-md text-center" id="swiper-pagination"></div>
+
+    
+</div>
+<!--PAR ÂGE-->
+<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var swiperAge = new Swiper('#swiper-age', {
+            grabCursor : true,
+
+            pagination: {
+                el: '#swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '#btn-next',
+                prevEl: '#btn-prev',
+            },
+
+        });
+    });
+</script>
+
+
+<script src="js/Chart.min.js"></script>
+<script>
+    var ctx = document.getElementById('chart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'doughnut',
+
+        // The data for our dataset
+        data: {
+            labels: [
+                "Mignon","Bisous","Heureux","Joyeux","Adorable","Sympathique","Taquin","Content","Amical","Choupi",            ],
+            datasets: [{
+                label: "My First dataset",
+                borderColor: 'rgba(255, 255,255, 1)',
+                borderWidth: 5,
+                hoverBorderColor: 'rgba(255, 255,255, 1)',
+                hoverBorderWidth: 5,
+                data: [
+                    9,7,5,4,4,2,2,2,2,2,                ],
+                backgroundColor: ["#addbff","#addbff","#addbff","#addbff","#addbff","#addbff","#addbff","#addbff","#addbff",'#addbff'],
+            }],
+        },
+
+        // Configuration options go here
+        options: {
+            cutoutPercentage:60, 
+            tooltips : {
+                titleFontFamily : "'Nunito', 'Arial', sans-serif",
+                bodyFontSize : 16,
+                bodySpacing : 10,
+                displayColors : false,
+                xPadding : 15,
+                yPadding : 10,
+            },
+            legend : {
+                display : false,
+            }
+
+        },
+    });
+</script>
+
+<script>
+    var ctx = document.getElementById('femmes_chart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'doughnut',
+
+        // The data for our dataset
+        data: {
+            labels: [
+                "Bisous","Mignon","Heureux","Adorable","Amical",            ],
+            datasets: [{
+                label: "My First dataset",
+                borderColor: 'rgba(255, 255,255, 1)',
+                borderWidth: 5,
+                hoverBorderColor: 'rgba(255, 255,255, 1)',
+                hoverBorderWidth: 5,
+                data: [
+                    5,5,4,3,2,                ],
+                backgroundColor: ["#addbff","#addbff","#addbff","#addbff",'#addbff'],
+            }],
+        },
+
+        // Configuration options go here
+        options: {
+            cutoutPercentage:50, 
+            tooltips : {
+                titleFontFamily : "'Nunito', 'Arial', sans-serif",
+                bodyFontSize : 16,
+                bodySpacing : 10,
+                displayColors : false,
+                xPadding : 15,
+                yPadding : 10,
+            },
+            legend : {
+                display : false,
+            }
+        },
+    });
+</script>
+
+<script>
+    var ctx = document.getElementById('hommes_chart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'doughnut',
+
+        // The data for our dataset
+        data: {
+            labels: [
+                "Mignon","Joyeux","Taquin","Choupi","Bisous",            ],
+            datasets: [{
+                label: "My First dataset",
+                borderColor: 'rgba(255, 255,255, 1)',
+                borderWidth: 5,
+                hoverBorderColor: 'rgba(255, 255,255, 1)',
+                hoverBorderWidth: 5,
+                data: [
+                    4,3,2,2,1,                ],
+                backgroundColor: ["#addbff","#addbff","#addbff","#addbff",'#addbff'],
+            }],
+        },
+
+        // Configuration options go here
+        options: {
+            cutoutPercentage:50, 
+            tooltips : {
+                titleFontFamily : "'Nunito', 'Arial', sans-serif",
+                bodyFontSize : 16,
+                bodySpacing : 10,
+                displayColors : false,
+                xPadding : 15,
+                yPadding : 10,
+            },
+            legend : {
+                display : false,
+            }
+        },
+    });
+</script>
+
+
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.11&appId=394086584359249';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111336964-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-111336964-1');
+        </script>
+
+
+        <script>
+            $(document).ready(function(){
+                $("#menu-trigg").on("touch click", function(){
+                    $(this).toggleClass("is-open");
+                    $("#menu-wrapper").toggleClass("is-open");
+                });
+            });
+        </script>
+
+                <script>
+            $(document).ready(function(){
+                $("#cookie_close").on("touch click", function(){
+                    $("#cookies").attr("style", "display:none");
+                });
+            });
+        </script>
+        <div class="cookie container-fluid" id="cookies">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-xs-12">
+                            Ce site utilise des cookies à des fins purement statistiques et les données utilisées sont anonymisées. En poursuivant ma navigation, je certifie être en accord avec l'utilisation des dits cookies.
+                        </div>
+
+                        <div class="col-md-2 col-xs-12 text-center">
+                            <span id="cookie_close">fermer</span>
+                            <a class="btn-primary btn" href="cookies.html">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        
+        <footer class="">
+            <div class="container">
+                <p class="col-xs-12 col-md-8">Toutes les émoticônes présentes sur le site ont été créées par <a href="https://www.flaticon.com/authors/freepik">Freepik</a>, proviennent de <a href="https://www.flaticon.com/">Flaticon</a> et son disponnible <a href="https://www.flaticon.com/packs/emoji">ici</a>.</p>
+
+                <p class="col-xs-12 col-md-4 text-right">
+                    Ce site a été créé par <a href="http://arthur-eudeline.fr/" target="_blank" rel="author">Arthur EUDELINE</a>.<br>
+                    <a href="cookies.html">Comment et pourquoi les cookies sont utilisés sur ce site</a>
+                </p>
+            </div>
+
+
+
+        </footer>
+    </body>
+
+<!-- Mirrored from emoticones-data.tp.mmi-lepuy.fr/stats.php?emo-id=12 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2017 15:00:20 GMT -->
+</html>

@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 28 Dec 2017 15:59:50 at http://emoticones-data.tp.mmi-lepuy.fr/emo-list.php +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*facebook* -*fb* -*google* -*flat* -*arthur*
+(winhttrack -qwC2%P%s%u%I0H0%kf2A25000%f#f -F "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l fr http://emoticones-data.tp.mmi-lepuy.fr/emo-list.php -O1 "D:\Utilisateurs\Bureau\test_1\k" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*facebook* -*fb* -*google* -*flat* -*arthur* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:00:21	Error: 	"Not Found" (404) at link emoticones-data.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.eot (from emoticones-data.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+16:00:21	Error: 	"Not Found" (404) at link emoticones-data.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.eot? (from emoticones-data.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+16:00:21	Error: 	"Not Found" (404) at link emoticones-data.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.woff2 (from emoticones-data.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+16:00:21	Error: 	"Not Found" (404) at link emoticones-data.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.woff (from emoticones-data.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+16:00:21	Error: 	"Not Found" (404) at link emoticones-data.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.ttf (from emoticones-data.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+16:00:21	Error: 	"Not Found" (404) at link emoticones-data.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.svg (from emoticones-data.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+16:00:21	Warning: 	File not parsed, looks like binary: emoticones-data.tp.mmi-lepuy.fr/css/fonts/Nunito-regular.woff2
+
+HTTrack Website Copier/3.49-2 mirror complete in 33 seconds : 78 links scanned, 71 files written (1342098 bytes overall) [473356 bytes received at 14344 bytes/sec], 1183945 bytes transferred using HTTP compression in 45 files, ratio 23%, 19.5 requests per connection
+(6 errors, 1 warnings, 0 messages)
